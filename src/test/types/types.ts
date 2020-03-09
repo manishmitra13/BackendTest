@@ -31,3 +31,15 @@ export interface GitResponse {
     created_at: string;
     updated_at: string;
   }
+
+  export interface ResponsePut {
+    status: string;
+    data: Data;
+  }
+  
+  export interface Data {
+    name: any;
+    salary: any;
+    age: any;
+    id: number;
+  }
