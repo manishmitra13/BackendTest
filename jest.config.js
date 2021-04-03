@@ -9,4 +9,13 @@ module.exports = {
   "transform": {
     "^.+\\.(ts|tsx)$": "ts-jest"
   },
+  "reporters": [
+    "default",
+    ["jest-html-reporters", {
+      "publicPath": "./src/test/testReport",
+      "filename": "report.html",
+      "expand": false,
+      "openReport": true
+    }]
+  ],
 }
